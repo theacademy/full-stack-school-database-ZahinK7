@@ -83,6 +83,7 @@ public class CourseServiceImpl implements CourseServiceInterface {
         //YOUR CODE STARTS HERE
 
         courseDao.deleteCourse(id);
+        System.out.println("Course ID: " + id + " deleted");
 
         //YOUR CODE ENDS HERE
     }
