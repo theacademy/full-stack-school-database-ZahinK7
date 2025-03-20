@@ -84,7 +84,6 @@ public class CourseServiceImpl implements CourseServiceInterface {
 
         courseDao.deleteCourse(id);
 
-
         //YOUR CODE ENDS HERE
     }
 }

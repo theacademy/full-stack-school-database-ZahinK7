@@ -29,7 +29,6 @@ public class TeacherDaoImpl implements TeacherDao {
                 teacher.getTeacherLName(),
                 teacher.getDept());
 
-
         return teacher;
 
         //YOUR CODE ENDS HERE
@@ -52,7 +51,6 @@ public class TeacherDaoImpl implements TeacherDao {
         final String SELECT_TEACHER_BY_ID = "SELECT * FROM teacher WHERE tid = ?";
         return jdbcTemplate.queryForObject(SELECT_TEACHER_BY_ID, new TeacherMapper(), id);
 
-
         //YOUR CODE ENDS HERE
     }
 
@@ -66,6 +64,7 @@ public class TeacherDaoImpl implements TeacherDao {
                 t.getTeacherLName(),
                 t.getDept(),
                 t.getTeacherId());
+
         //YOUR CODE ENDS HERE
     }
 

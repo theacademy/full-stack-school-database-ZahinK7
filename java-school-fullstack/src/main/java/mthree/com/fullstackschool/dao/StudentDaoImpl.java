@@ -33,9 +33,7 @@ public class StudentDaoImpl implements StudentDao {
                 student.getStudentFirstName(),
                 student.getStudentLastName());
 
-
         return student;
-
 
         //YOUR CODE ENDS HERE
     }
@@ -43,7 +41,6 @@ public class StudentDaoImpl implements StudentDao {
     @Override
     public List<Student> getAllStudents() {
         //YOUR CODE STARTS HERE
-
 
         final String SELECT_ALL_STUDENTS = "SELECT * FROM student";
         return jdbcTemplate.query(SELECT_ALL_STUDENTS, new StudentMapper());

@@ -24,7 +24,6 @@ public class CourseDaoImpl implements CourseDao {
                 course.getCourseDesc(),
                 course.getTeacherId());
 
-
         return course;
 
 
@@ -83,7 +82,6 @@ public class CourseDaoImpl implements CourseDao {
         //YOUR CODE STARTS HERE
         String DELETE_STUDENTS_COURSE = "DELETE FROM course_student WHERE course_id = ?";
         jdbcTemplate.update(DELETE_STUDENTS_COURSE, courseId);
-
 
         //YOUR CODE ENDS HERE
     }
